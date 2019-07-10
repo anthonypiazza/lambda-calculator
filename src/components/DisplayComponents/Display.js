@@ -1,6 +1,6 @@
 import React from "react";
 
-const Display = () => {
+const Display = props => {
   return (
     <div style={{ 
       color: "white", 
@@ -13,7 +13,18 @@ const Display = () => {
       marginLeft: "30px", 
       marginTop: "-40px"
     }}>
-      {/* Display any props data here */}<h1 style={{ marginRight: "20px", fontWeight: "lighter", fontSize: "3rem", paddingTop: "10px" }}>0</h1>
+      {/* Display any props data here */}
+      <h1 
+        style={{ 
+          marginRight: "20px", 
+          fontWeight: "lighter", 
+          fontSize: "3rem", 
+          paddingTop: "10px", 
+          color: "white"
+        }}
+      >
+      {props.displayState}
+      </h1>
     </div>
   )
 };

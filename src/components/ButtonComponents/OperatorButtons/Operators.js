@@ -15,7 +15,7 @@ function Operators() {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {operators.map( operator => (
-        <OperatorButton operator={operator} key={operator.index} />
+        <OperatorButton setOperator={setOperator} operator={operator} key={operator.index} />
       ))}
     </div>
   );
