@@ -19,13 +19,17 @@ function App() {
     setDisplay(value);
   };
 
+  const clearDisplay = () => {
+    setDisplay(0);
+  }
+
   return (
     <div className="container">
       <Logo />
       <div className="App">
         <Display displayState={displayState} />
         <div className="buttons">
-          <div><Specials />          
+          <div><Specials clearDisplay={clearDisplay} />          
             <Numbers changeDisplay={changeDisplay} />
           </div>  
           <div>

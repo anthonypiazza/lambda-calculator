@@ -1,8 +1,11 @@
 import React from "react";
 
 const SpecialButton = props => {
+  console.log(props.special)
   return (
-    <button style={{ 
+    <button 
+      onClick={() => props.special === "C" ? props.clearDisplay() : null}
+      style={{ 
       background: "#2160b0", 
       color: "white", 
       borderRadius: "50%", 
